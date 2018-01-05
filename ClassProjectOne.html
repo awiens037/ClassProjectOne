@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yubify!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/ClassProjectOne.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container1">
+        <div class="Jumbotron text-center rounded">
+            <h1>YouTunes</h1>
+            <p>The one stop shop for for all of your tunes</p>
+        </div>
+    </div>
+    <!--2nd Div For search-->
+    <div class="container2">
+        <form>
+            <h2>Add Artist/Song</h2>
+            <div class="form-group rounded">
+                <input type="Type Artist or Song" class="form-control" id="exampleFormControlInput1" placeholder="Search!">
+            </div>
+    </div>
+    <!--3rd Div with buttons-->
+    <div class="container3">
+        <button type="button" class="Happiness btn btn-outline-success">
+            <img src="assets/images/Happiness.png" width="20"> Happiness
+        </button>
+        <button type="button" class="Neutral btn btn-outline-success">
+            <img src="assets/images/Neutral.png" width="20"> Neutral
+        </button>
+        <button type="button" class="Surprise btn btn-outline-success">
+            <img src="assets/images/Surprise.jpg" width="20"> Surprise
+        </button>
+        <button type="button" class="Sadness btn btn-outline-success">
+            <img src="assets/images/Sadness.png" width="20"> Sadness
+        </button>
+        <button type="button" class="Disgust btn btn-outline-success">
+            <img src="assets/images/Disgust.jpg" width="20"> Disgust
+        </button>
+        <button type="button" class="Anger btn btn-outline-success"> 
+            <img src="assets/images/Anger.jpg" width="20"> Anger
+        </button>
+        <button type="button" class="Fear btn btn-outline-success">
+            <img src="assets/images/Fear.jpg" width="20"> Fear
+        </button>
+        <button type="button" class="Face++ btn btn-outline-success" width="20">Face++
+        </button>
+    </div>
+
+    <br><br>
+
+    <!--4th div video/data input -->
+    <div class="container4">
+    <iframe width="50%" height="400" src="https://youtube.com/embed/O0OPKywMoSk"></iframe>
+    </div>
+
+    <br><br>
+
+    <!--5th div list -->
+    <div class="container5 panel panel-primary rounded">
+            <div class="panel-heading">
+              <h3 class="panel-title rounded">Playlist</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-striped" id='song-table'>
+                <thead>
+                  <tr>
+                    <th>Song Title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+
+</html>

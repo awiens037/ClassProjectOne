@@ -1,0 +1,31 @@
+.Jumbotron {
+	background-image: url("../images/swirl.jpg");
+	color: white;
+	text-shadow: 1px 2px 3px greenyellow;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	padding: 20px;
+}
+
+h2 {
+	background-color: greenyellow;
+	color: darkblue;
+	font-size: 20px;
+}
+
+h1 {
+	text-shadow: 2px 3px 4px black;
+	color: greenyellow;
+}
+
+h3 {
+	background-color: darkblue;
+	color: greenyellow;
+	font-size: 20px;
+}
+
+.btn {
+	color: darkblue;
+	border-color: greenyellow;
+	border-width: 2px;
+}
