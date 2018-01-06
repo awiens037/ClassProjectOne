@@ -29,3 +29,13 @@ h3 {
 	border-color: greenyellow;
 	border-width: 2px;
 }
+#search-results{
+	display: flex;
+	overflow: scroll;
+
+	
+}
+
+#player{
+	padding:2px;
+}
