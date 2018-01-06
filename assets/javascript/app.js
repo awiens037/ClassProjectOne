@@ -10,12 +10,14 @@ $('button').on('click', function() {
 		$('.container5').show();
 	});
 
-
-
 	$(document).ready(function () {
 		$('#search-term').submit(function (event) {
 			event.preventDefault();
 			var searchTerm = $('#exampleFormControlInput1').val();
+			//validation
+			if (searchTerm == "") {
+				return
+			}
 			getRequest(searchTerm);
 		});
 	  });
