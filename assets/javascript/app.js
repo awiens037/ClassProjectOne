@@ -13,7 +13,7 @@ $('button').on('click', function() {
 	$(document).ready(function () {
 		$('#search-term').submit(function (event) {
 			event.preventDefault();
-			var searchTerm = $('#exampleFormControlInput1').val();
+			var searchTerm = $('#exampleFormControlInput1').val().trim();
 			//validation
 			if (searchTerm == "") {
 				return
@@ -41,9 +41,8 @@ $('button').on('click', function() {
 		
 		$.each(entries, function (index, value) {
 			var title = value.snippet.title;
-			var thumbnail = value.snippet.thumbnails.default.url;
-			html += '<p>' + title + '</p>';
-			html += '<iframe id="player" width="640" height="360" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" allowfullscreen></iframe>';
+			html += '<p>' + " " + '</p>';
+			html += '<iframe id="player" width="300" height="300" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" marginwidth="50" allowfullscreen></iframe> ';
 		}); 
 		
 		$('#search-results').html(html);
