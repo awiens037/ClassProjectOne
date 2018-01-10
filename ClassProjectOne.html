@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yubify!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>Youtunes!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/ClassProjectOne.css">
-    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,44 +18,46 @@
     </div>
     <!--2nd Div For search-->
     <div class="container2">
-        <form>
+        <form id="search-term">
             <h2>Add Artist/Song</h2>
             <div class="form-group rounded">
-                <input type="Type Artist or Song" class="form-control" id="exampleFormControlInput1" placeholder="Search!">
+                <input  type="text" class="form-control" id="giveUsYourFace" placeholder="Search!">
             </div>
     </div>
     <!--3rd Div with buttons-->
-    <div class="container3">
-        <button type="button" class="Happiness btn btn-outline-success">
+
+    
+    <div id="container3">
+        <button type="button" class="Happiness btn emotion btn-outline-success" id="hapy">
             <img src="assets/images/Happiness.png" width="20"> Happiness
         </button>
-        <button type="button" class="Neutral btn btn-outline-success">
+        <button type="button" class="Neutral btn emotion btn-outline-success" id="nrtral">
             <img src="assets/images/Neutral.png" width="20"> Neutral
         </button>
-        <button type="button" class="Surprise btn btn-outline-success">
+        <button type="button" class="Surprise btn emotion btn-outline-success" id="spris">
             <img src="assets/images/Surprise.jpg" width="20"> Surprise
         </button>
-        <button type="button" class="Sadness btn btn-outline-success">
+        <button type="button" class="Sadness btn emotion btn-outline-success" id="sdaness">
             <img src="assets/images/Sadness.png" width="20"> Sadness
         </button>
-        <button type="button" class="Disgust btn btn-outline-success">
+        <button type="button" class="Disgust btn emotion btn-outline-success" id="disguss">
             <img src="assets/images/Disgust.jpg" width="20"> Disgust
         </button>
-        <button type="button" class="Anger btn btn-outline-success"> 
+        <button type="button" class="Anger btn emotion btn-outline-success" id="grr"> 
             <img src="assets/images/Anger.jpg" width="20"> Anger
         </button>
-        <button type="button" class="Fear btn btn-outline-success">
+        <button type="button" class="Fear btn emotion btn-outline-success" id="eek">
             <img src="assets/images/Fear.jpg" width="20"> Fear
         </button>
-        <button type="button" class="Face++ btn btn-outline-success" width="20">Face++
+        <button type="submit" value="Submit" class="SearchBtn btn btn-outline-success" width="20">Search
         </button>
     </div>
-
+    
     <br><br>
 
     <!--4th div video/data input -->
     <div class="container4">
-    <iframe width="50%" height="400" src="https://youtube.com/embed/O0OPKywMoSk"></iframe>
+        <div id="search-results"></div>
     </div>
 
     <br><br>
@@ -82,9 +83,13 @@
               </table>
             </div>
     </div>
-
+      
+    
+    <!-- scripts -->
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
 </body>
 
 </html>
