@@ -151,12 +151,29 @@ $(document).ready(function () {
 		var html = "";
 
 		var entries = results.items;
-		
+		var searchResults = $('<div class="owl-carousel owl-theme">');
 		$.each(entries, function (index, value) {
-			var title = value.snippet.title;
-			html += '<p>' + " " + '</p>';
-			html += '<iframe id="player" width="300" height="300" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" marginwidth="50" allowfullscreen></iframe> ';
-		}); 
+			html += '<p>' + '</p>';
+			html += '<iframe class="item" id="player" width="500" height="300" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" allowfullscreen></iframe>';
+		});
+		searchResults.html(html);
 		
-		$('#search-results').html(html);
+		searchResults.owlCarousel({
+			loop:true,
+			margin:0,
+			paddinf:3,
+			nav:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
+		});
+		$('#search-results').html(searchResults);
 	  }
