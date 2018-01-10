@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yubify!</title>
+    <title>YouTunes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/ClassProjectOne.css">
 </head>
@@ -19,14 +19,12 @@
     <!--2nd Div For search-->
     <div class="container2">
         <form id="search-term">
-            <h2>Add Artist/Song</h2>
+            <label for="search-content">Search Content</label>
             <div class="form-group rounded">
-                <input  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search!">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search!">
             </div>
     </div>
     <!--3rd Div with buttons-->
-
-    
     <div id="container3">
         <button type="button" class="Happiness btn btn-outline-success">
             <img src="assets/images/Happiness.png" width="20"> Happiness
@@ -43,7 +41,7 @@
         <button type="button" class="Disgust btn btn-outline-success">
             <img src="assets/images/Disgust.jpg" width="20"> Disgust
         </button>
-        <button type="button" class="Anger btn btn-outline-success"> 
+        <button type="button" class="Anger btn btn-outline-success">
             <img src="assets/images/Anger.jpg" width="20"> Anger
         </button>
         <button type="button" class="Fear btn btn-outline-success">
@@ -52,44 +50,39 @@
         <button type="submit" value="Submit" class="SearchBtn btn btn-outline-success" width="20">Search
         </button>
     </div>
-    
-    <br><br>
-
+    <br>
+    <br>
     <!--4th div video/data input -->
     <div class="container4">
         <div id="search-results"></div>
     </div>
-
-    <br><br>
-
+    <br>
+    <br>
     <!--5th div list -->
     <div class="container5 panel panel-primary rounded">
-            <div class="panel-heading">
-              <h3 class="panel-title rounded">Playlist</h3>
-            </div>
-            <div class="panel-body">
-              <table class="table table-striped" id='song-table'>
+        <div class="panel-heading">
+            <h3 class="panel-title rounded">Playlist</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped" id='song-table'>
                 <thead>
-                  <tr>
-                    <th>Song Title</th>
-                    <th>Artist</th>
-                    <th>Album</th>
-                    <th>Year</th>
-                    <th>Genre</th>
-                  </tr>
+                    <tr>
+                        <th>Song Title</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Year</th>
+                        <th>Genre</th>
+                    </tr>
                 </thead>
                 <tbody>
                 </tbody>
-              </table>
-            </div>
+            </table>
+        </div>
     </div>
-      
-    
     <!-- scripts -->
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
-
 </body>
 
 </html>
