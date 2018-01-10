@@ -1,32 +1,32 @@
 .Jumbotron {
 	background-image: url("../images/swirl.jpg");
 	color: white;
-	text-shadow: 1px 2px 3px greenyellow;
+	text-shadow: 1px 2px 3px limegreen;
 	margin-bottom: 7px;
 	margin-top: 7px;
 	padding: 20px;
 }
 
 h2 {
-	background-color: greenyellow;
+	background-color: limegreen;
 	color: darkblue;
 	font-size: 20px;
 }
 
 h1 {
 	text-shadow: 2px 3px 4px black;
-	color: greenyellow;
+	color: limegreen;
 }
 
 h3 {
 	background-color: darkblue;
-	color: greenyellow;
+	color: limegreen;
 	font-size: 20px;
 }
 
 .btn {
 	color: darkblue;
-	border-color: greenyellow;
+	border-color: limegreen;
 	border-width: 2px;
 }
 
@@ -42,7 +42,7 @@ h3 {
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: lightgreen;
+    background: limegreen;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
@@ -52,7 +52,7 @@ h3 {
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: lightgreen;
+    background: limegreen;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
@@ -71,5 +71,5 @@ h3 {
 
 }
 .owl-dot.active {
-    background-color: lightgreen;
+    background-color: limegreen;
 }

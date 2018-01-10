@@ -131,6 +131,7 @@ $(document).ready(function () {
 		}
 		getRequest(searchTerm);
 	});
+
 });
 	  
 	  function getRequest(searchTerm) {
