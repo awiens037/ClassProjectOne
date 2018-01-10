@@ -128,36 +128,53 @@ $(document).ready(function () {
 		}
 		getRequest(searchTerm);
 	});
->>>>>>> d6fb3f37a28a2ce71918d4c110c9f454e2139cb8
+
 });
     
     function getRequest(searchTerm) {
       
-    searchTerm = searchTerm += ' -vevo music playlist';
-    console.log(searchTerm);
-    url = 'https://www.googleapis.com/youtube/v3/search';
-    var params = {
-      part: 'snippet',
-      key: 'AIzaSyC_sNakrImx81wT4-F6XoOPNpvTo9ru6Is',
-      q: searchTerm
-    };
-    
-    $.getJSON(url, params, function (searchTerm) {
-      showResults(searchTerm);
-    });
+      searchTerm = searchTerm += ' -vevo music playlist';
+      console.log(searchTerm);
+      url = 'https://www.googleapis.com/youtube/v3/search';
+      var params = {
+        part: 'snippet',
+        key: 'AIzaSyC_sNakrImx81wT4-F6XoOPNpvTo9ru6Is',
+        q: searchTerm
+      };
+      
+      $.getJSON(url, params, function (searchTerm) {
+        showResults(searchTerm);
+      });
     }
     
     function showResults(results) {
-    var html = "";
+      var html = "";
 
-    var entries = results.items;
-    
-    $.each(entries, function (index, value) {
-      var title = value.snippet.title;
-      html += '<p>' + " " + '</p>';
-      html += '<iframe id="player" width="300" height="300" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" marginwidth="50" allowfullscreen></iframe> ';
-    }); 
-    
-    $('#search-results').html(html);
-    }
-
+  		var entries = results.items;
+  		var searchResults = $('<div class="owl-carousel owl-theme">');
+  		$.each(entries, function (index, value) {
+  			html += '<p>' + '</p>';
+  			html += '<iframe class="item" id="player" width="500" height="300" src="https://www.youtube.com/embed/'+ value.id.videoId + '" frameborder="0" allowfullscreen></iframe>';
+  		});
+  		searchResults.html(html);
+  		
+  		searchResults.owlCarousel({
+  			loop:true,
+  			margin:0,
+  			paddinf:3,
+  			nav:true,
+  			responsive:{
+  				0:{
+  					items:1
+  				},
+  				600:{
+  					items:3
+  				},
+  				1000:{
+  					items:5
+  				}
+  			}
+  		});
+      
+  		$('#search-results').html(searchResults);
+	 }
