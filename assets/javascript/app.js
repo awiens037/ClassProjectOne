@@ -90,18 +90,32 @@ $(document).ready(function () {
 			// Determine which emotion is the most apparent and add search terms to the Youtube search params.
 			if (emote.sadness >= 50) {
 				searchTerm += 'sorrowful dirge somber'; 
+				$('#answer').html('<h1>Sadness</h1>');
+				console.log('sad');
 			} else if (emote.disgust >= 50) {
 				searchTerm += 'revolt disgust grunge';
+				$('#answer').html('<h1>Disgust</h1>');
+				console.log('disgust');
 			} else if (emote.anger >= 50) {
 				searchTerm += 'metal battle rage';
+				$('#answer').html('<h1>Anger</h1>');
+				console.log('anger');
 			} else if (emote.surprise >= 50) {
 				searchTerm += 'shock alarm big_band ska';
+				$('#answer').html('<h1>Surprise</h1>');
+				console.log('surprise');
 			} else if (emote.fear >= 50) {
 				searchTerm += 'suspensful dramatic score';
+				$('#answer').html('<h1>Fear</h1>');
+				console.log('fear');
 			} else if (emote.happiness >= 50) {
 				searchTerm += 'bubbly pop 90s happy';
+				$('#answer').html('<h1>Happiness</h1>');
+				console.log('happiness');
 			} else {
 				searchTerm += 'calm waiting generic';
+				$('#answer').html('<h1>Neutral</h1>');
+				console.log('neutral')
 			}
 
 			/*
@@ -133,7 +147,7 @@ $(document).ready(function () {
 	  
 	  function getRequest(searchTerm) {
 	  	
-		searchTerm = searchTerm += ' -vevo music playlist';
+		searchTerm = searchTerm += ' -vevo music playlist -umg -wmg';
 		console.log(searchTerm);
 		url = 'https://www.googleapis.com/youtube/v3/search';
 		var params = {
