@@ -19,42 +19,49 @@ $(document).ready(function () {
 		searchTerm += 'bubbly pop 90s happy';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Happiness</h1>');
 
 	});
 	$('#sdaness').on('click', function(){
 		searchTerm += 'sorrowful dirge somber';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Sadness</h1>');
 		
 	});
 	$('#grr').on('click', function(){
 		searchTerm += 'metal battle rage';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Anger</h1>');
 
 	});
 	$('#eek').on('click', function(){
 		searchTerm += 'suspensful dramatic score';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Fear</h1>');
 
 	});
 	$('#spris').on('click', function(){
 		searchTerm += 'shock alarm ska big_band';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Surprise</h1>');
 
 	});
 	$('#disguss').on('click', function(){
 		searchTerm += 'revolt disgust grunge';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Disgust</h1>');
 
 	});
 	$('#nrtral').on('click', function(){
 		searchTerm += 'calm waiting generic';
 		getRequest(searchTerm);
 		console.log(searchTerm);
+		$('#answer').html('<h1>Neutral</h1>');
 
 	});
 
