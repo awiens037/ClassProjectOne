@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	
+
 
 	//following code hides container4 and 5//
 	$('.container4').hide();
@@ -143,6 +145,7 @@ $(document).ready(function () {
 		}
 		getRequest(searchTerm);
 	});
+
 });
 	  
 	  function getRequest(searchTerm) {
@@ -190,4 +193,11 @@ $(document).ready(function () {
 			}
 		});
 		$('#search-results').html(searchResults);
+
+		//owl code needs to start at 0
+		setTimeout(function(){
+			$(".owl-stage").css({
+			"transform" : "translate3d(0px, 0px, 0px)"
+			})
+		}, 1000);
 	  }
